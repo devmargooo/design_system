@@ -1,0 +1,17 @@
+@import "variables";
+
+.theme {
+  &_color_project-default {
+    &__block {
+      &_default { background: $project-default-bg-default; }
+      &_accent { background: $project-default-bg-accent; }
+      &_border { background: $project-default-bg-border; }
+    }
+    &__text {
+      &_primary { color: $project-default-fc-primary; }
+      &_secondary { color: $project-default-fc-secondary; }
+      &_complementary { color: $project-default-fc-complementary; }
+      &_link { color: $project-default-fc-link; }
+    }
+  }
+}
