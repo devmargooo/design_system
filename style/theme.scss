@@ -42,15 +42,23 @@
   }
   &_color_megafon-brand {
     &__block {
-      &_default { background: $project-megafon-bg-default; }
-      &_accent { background: $project-megafon-bg-accent; }
-      &_border { background: $project-megafon-bg-border; }
+      &_default { background: $megafon-brand-bg-default; }
+      &_accent { background: $megafon-brand-bg-accent; }
+      &_border { background: $megafon-brand-bg-border; }
     }
     &__text {
-      &_primary { color: $project-megafon-fc-primary; }
-      &_secondary { color: $project-megafon-fc-secondary; }
-      &_complementary { color: $project-megafon-fc-complementary; }
-      &_link { color: $project-megafon-fc-link; }
+      &_primary { color: $megafon-brand-fc-primary; }
+      &_secondary { color: $megafon-brand-fc-secondary; }
+      &_complementary { color: $megafon-brand-fc-complementary; }
+      &_link { color: $megafon-brand-fc-link; }
     }
+  }
+
+  &_size_default{
+    &_s { font-size: $default_fs_s; line-height: $default_lh_s; }
+    &_m { font-size: $default_fs_m; line-height: $default_lh_m; }
+    &_l { font-size: $default_fs_l; line-height: $default_lh_l; }
+    &_xl { font-size: $default_fs_xl; line-height: $default_lh_xl; }
+    &_xxl { font-size: $default_fs_xxl; line-height: $default_lh_xxl; }
   }
 }
