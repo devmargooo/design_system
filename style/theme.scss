@@ -14,4 +14,43 @@
       &_link { color: $project-default-fc-link; }
     }
   }
+  &_color_project-inverse {
+    &__block {
+      &_default { background: $project-inverse-bg-default; }
+      &_accent { background: $project-inverse-bg-accent; }
+      &_border { background: $project-inverse-bg-border; }
+    }
+    &__text {
+      &_primary { color: $project-inverse-fc-primary; }
+      &_secondary { color: $project-inverse-fc-secondary; }
+      &_complementary { color: $project-inverse-fc-complementary; }
+      &_link { color: $project-inverse-fc-link; }
+    }
+  }
+  &_color_project-warning {
+    &__block {
+      &_default { background: $project-warning-bg-default; }
+      &_accent { background: $project-warning-bg-accent; }
+      &_border { background: $project-warning-bg-border; }
+    }
+    &__text {
+      &_primary { color: $project-warning-fc-primary; }
+      &_secondary { color: $project-warning-fc-secondary; }
+      &_complementary { color: $project-warning-fc-complementary; }
+      &_link { color: $project-warning-fc-link; }
+    }
+  }
+  &_color_megafon-brand {
+    &__block {
+      &_default { background: $project-megafon-bg-default; }
+      &_accent { background: $project-megafon-bg-accent; }
+      &_border { background: $project-megafon-bg-border; }
+    }
+    &__text {
+      &_primary { color: $project-megafon-fc-primary; }
+      &_secondary { color: $project-megafon-fc-secondary; }
+      &_complementary { color: $project-megafon-fc-complementary; }
+      &_link { color: $project-megafon-fc-link; }
+    }
+  }
 }
