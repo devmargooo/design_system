@@ -61,4 +61,42 @@
     &_xl { font-size: $default_fs_xl; line-height: $default_lh_xl; }
     &_xxl { font-size: $default_fs_xxl; line-height: $default_lh_xxl; }
   }
+
+  &_space_default {
+    &__block {
+      &_xxxs { margin-top: $default_space_xxxs; }
+      &_xxs { margin-top: $default_space_xxs; }
+      &_xs { margin-top: $default_space_xs; }
+      &_s { margin-top: $default_space_s; }
+      &_m { margin-top: $default_space_m; }
+      &_l { margin-top: $default_space_l; }
+      &_xl { margin-top: $default_space_xl; }
+      &_xxl { margin-top: $default_space_xxl; }
+      &_xxxl { margin-top: $default_space_xxxl; }
+      &_xxxxl { margin-top: $default_space_xxxxl; }
+    }
+  }
+
+  &_breakpoint_default {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $default_breakpoint-desktop) {
+      /* В задании не было указано, как отображаются блоки на десктопе;
+         Я решила, что flex - это подходящее решение */
+      flex-direction: row;
+    }
+  }
+
+  &_gap_small {
+    $gap: $default_space_m;
+
+    @media (min-width: $default_breakpoint-desktop) {
+      $gap: $default_space_xxxl;
+    }
+
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+  }
+
 }
