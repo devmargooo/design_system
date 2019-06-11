@@ -30,7 +30,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('sass', function(){
-    return gulp.src('style/main.scss')
+    return gulp.src('src/style/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer(
             ['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }
