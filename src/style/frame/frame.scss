@@ -1,0 +1,39 @@
+@import "variables";
+
+.layout {
+  &__container {
+    &_align_center { margin-left: auto; margin-right: auto; }
+    &_size_s { max-width: $container_size_s; }
+    &_size_m { max-width: $container_size_m; }
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  $column_width: 100% / 12; // default column width;
+
+  &_xs-columns_3 { $column_width: 100% / 3; }
+  &_s-columns_3 { $column_width: 100% / 3; }
+  &_s-columns_6 { $column_width: 100% / 6; }
+  &_m-columns_12 { $column_width: 100% / 12; }
+  &_m-columns_10 { $column_width: 100% / 10; }
+
+  &_xs-columns_3,
+  &_s-columns_3,
+  &_s-columns_6,
+  &_m-columns_12,
+  &_m-columns_10 { & > div { width: $column_width; } } // default div width
+
+  &_col-gap_two-thirds { padding-left: $gap / 3; padding-right: $gap / 3; }
+  &_col-gap_full { padding-left: $gap / 2; padding-right: $gap / 2; }
+  &_row-gap_half { padding-left: $gap / 4; padding-right: $gap / 4; }
+  &_row-gap_full { padding-left: $gap / 2; padding-right: $gap / 2; }
+
+  &__fraction_m-col_2 { width: 2 * $column_width; }
+  &__fraction_m-col_3 { width: 3 * $column_width; }
+  &__fraction_m-col_4 { width: 4 * $column_width; }
+  &__fraction_m-col_5 { width: 5 * $column_width; }
+  &__fraction_m-col_8 { width: 8 * $column_width; }
+}

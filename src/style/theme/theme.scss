@@ -1,4 +1,4 @@
-@import "theme/variables";
+@import "variables";
 
 .theme {
   &_color_project-default {
@@ -77,26 +77,9 @@
     }
   }
 
-  &_breakpoint_default {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: $default_breakpoint-desktop) {
-      /* В задании не было указано, как отображаются блоки на десктопе;
+  &_breakpoint_default { display: flex; flex-direction: column;
+    /* В задании не было указано, как отображаются блоки на десктопе;
          Я решила, что flex - это подходящее решение */
-      flex-direction: row;
-    }
+    @media (min-width: $default_breakpoint-desktop) { flex-direction: row; }
   }
-
-  &_gap_small {
-    $gap: $default_space_m;
-
-    @media (min-width: $default_breakpoint-desktop) {
-      $gap: $default_space_xxxl;
-    }
-
-    padding-left: $gap / 2;
-    padding-right: $gap / 2;
-  }
-
 }
