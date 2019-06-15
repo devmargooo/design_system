@@ -26,14 +26,20 @@
   &_m-columns_12,
   &_m-columns_10 { & > div { width: $column_width; } } // default div width
 
-  &_col-gap_two-thirds { padding-left: $gap / 3; padding-right: $gap / 3; }
-  &_col-gap_full { padding-left: $gap / 2; padding-right: $gap / 2; }
-  &_row-gap_half { padding-left: $gap / 4; padding-right: $gap / 4; }
-  &_row-gap_full { padding-left: $gap / 2; padding-right: $gap / 2; }
-
   &__fraction_m-col_2 { width: 2 * $column_width; }
   &__fraction_m-col_3 { width: 3 * $column_width; }
   &__fraction_m-col_4 { width: 4 * $column_width; }
   &__fraction_m-col_5 { width: 5 * $column_width; }
   &__fraction_m-col_8 { width: 8 * $column_width; }
+}
+
+.theme_gap_small.grid, // gap is defined only for theme_gap_small ¯\_(ツ)_/¯
+.theme_gap_small .grid {
+  $gap: $default_space_m;
+  @media (min-width: $default_breakpoint-desktop) { $gap: $default_space_xxxl; }
+
+  &_col-gap_two-thirds { padding-left: $gap / 3; padding-right: $gap / 3; }
+  &_col-gap_full { padding-left: $gap / 2; padding-right: $gap / 2; }
+  &_row-gap_half { padding-left: $gap / 4; padding-right: $gap / 4; }
+  &_row-gap_full { padding-left: $gap / 2; padding-right: $gap / 2; }
 }

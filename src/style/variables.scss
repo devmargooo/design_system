@@ -1,4 +1,13 @@
-@import "../common-variables/spaces";
+$default_space_xxxs: 2px;
+$default_space_xxs: 4px;
+$default_space_xs: 8px;
+$default_space_s: 12px;
+$default_space_m: 16px;
+$default_space_l: 20px;
+$default_space_xl: 24px;
+$default_space_xxl: 32px;
+$default_space_xxxl: 40px;
+$default_space_xxxxl: 48px;
 
 $project-default-bg-default: #FFFFFF;
 $project-default-bg-accent: #0056B3;
@@ -49,3 +58,6 @@ $default_lh_xl: 28px;
 $default_lh_xxl: 34px;
 
 $default_breakpoint-desktop: 1144px;
+
+$container_size_s: 880px;
+$container_size_m: 1144px;
