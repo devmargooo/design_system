@@ -1,0 +1,51 @@
+.card {
+  &__content {
+    display: flex;
+    &_distribute_center { justify-content: center; }
+    &_vertical-align_center { align-items: center; }
+    &_space-a_m { padding: $default_space_m; }
+    &_space-a_l { padding: $default_space_l; }
+    &_space-a_xl { padding: $default_space_xl; }
+    &_space-a_xxl { padding: $default_space_xxl; }
+  }
+  &__footer {
+    display: flex;
+    &_distribute_center { justify-content: center; }
+    &_distribute_between { justify-content: space-between; }
+    &_distribute_right { justify-content: right; }
+    &_vertical-align_center { align-items: center; }
+    &_vertical-align_top { align-items: flex-start; }
+    &_vertical-align_bottom { align-items: flex-end; }
+    &_space-a_m { padding: $default_space_m; }
+    &_space-a_l { padding: $default_space_l; }
+    &_space-a_xl { padding: $default_space_xl; }
+    &_space-a_xxl { padding: $default_space_xxl; }
+  }
+}
+
+.theme {
+  &_color_project-default {
+    .card {
+      &_border_all { border: 1px solid $project-default-bg-border; }
+      &_view_default { background: $project-default-bg-default; }
+    }
+  }
+  &_color_project-inverse {
+    .card {
+      &_border_all { border: 1px solid $project-inverse-bg-border; }
+      &_view_default { background: $project-inverse-bg-default; }
+    }
+  }
+  &_color_project-warning {
+    .card {
+      &_border_all { border: 1px solid $project-warning-bg-border; }
+      &_view_default { background: $project-warning-bg-default; }
+    }
+  }
+  &_color_megafon-brand {
+    .card {
+      &_border_all { border: 1px solid $megafon-brand-bg-border; }
+      &_view_default { background: $megafon-brand-bg-default; }
+    }
+  }
+}
