@@ -1,0 +1,83 @@
+.form {
+  &__item {
+    display: flex;
+    &_distribute_between { justify-content: space-between; }
+    &_vertical-align_center { align-items: center; }
+
+    &_indent-b_xxxs { margin-bottom: $default_space_xxxs; }
+    &_indent-b_xxs { margin-bottom: $default_space_xxs; }
+    &_indent-b_s { margin-bottom: $default_space_s; }
+    &_indent-b_m { margin-bottom: $default_space_m; }
+    &_indent-b_l { margin-bottom: $default_space_l; }
+    &_indent-b_xl { margin-bottom: $default_space_xl; }
+    &_indent-b_xxl { margin-bottom: $default_space_xxl; }
+    &_indent-b_xxxl { margin-bottom: $default_space_xxxl; }
+
+    &_space-h_xxxs { padding-left: $default_space_xxxs; padding-right: $default_space_xxxs; }
+    &_space-h_xxs { padding-left: $default_space_xxs; padding-right: $default_space_xxs; }
+    &_space-h_s { padding-left: $default_space_s; padding-right: $default_space_s; }
+    &_space-h_m { padding-left: $default_space_m; padding-right: $default_space_m;}
+    &_space-h_l { padding-left: $default_space_l; padding-right: $default_space_l;}
+    &_space-h_xl { padding-left: $default_space_xl; padding-right: $default_space_xl; }
+    &_space-h_xxl { padding-left: $default_space_xxl; padding-right: $default_space_xxl; }
+    &_space-h_xxxl { padding-left: $default_space_xxxl; padding-right: $default_space_xxxl;}
+    &_space-v_xxxs { padding-top: $default_space_xxxs; padding-bottom: $default_space_xxxs; }
+
+    &_space-v_xxs { padding-top: $default_space_xxs; padding-bottom: $default_space_xxs; }
+    &_space-v_s { padding-top: $default_space_s; padding-bottom: $default_space_s; }
+    &_space-v_m { padding-top: $default_space_m; padding-bottom: $default_space_m;}
+    &_space-v_l { padding-top: $default_space_l; padding-bottom: $default_space_l;}
+    &_space-v_xl { padding-top: $default_space_xl; padding-bottom: $default_space_xl; }
+    &_space-v_xxl { padding-top: $default_space_xxl; padding-bottom: $default_space_xxl; }
+    &_space-v_xxxl { padding-top: $default_space_xxxl; padding-bottom: $default_space_xxxl;}
+
+    &:last-child&_border_bottom { border-bottom: none; }
+  }
+
+  &__label {
+    &_width_default { width: 35%; }
+  }
+}
+
+.theme {
+  &_color_project-default {
+    .form {
+      &_border_all { border: 3px solid $project-default-bg-border; }
+      &_view_default { background: $project-default-bg-default; }
+
+      &__item {
+        &_border_bottom { border-bottom: 3px solid $project-default-bg-border; }
+      }
+    }
+  }
+  &_color_project-inverse {
+    .form {
+      &_border_all { border: 3px solid $project-inverse-bg-border; }
+      &_view_default { background: $project-inverse-bg-default; }
+
+      &__item {
+        &_border_bottom { border-bottom: 3px solid $project-inverse-bg-border; }
+      }
+    }
+  }
+  &_color_project-warning {
+    .form {
+      &_border_all { border: 3px solid $project-warning-bg-border; }
+      &_view_default { background: $project-warning-bg-default; }
+
+      &__item {
+        &_border_bottom { border-bottom: 3px solid $project-warning-bg-border; }
+      }
+    }
+  }
+  &_color_megafon-brand {
+    .form {
+      &_border_all { border: 3px solid $megafon-brand-bg-border; }
+      &_view_default { background: $megafon-brand-bg-default; }
+
+      &__item {
+        &_border_bottom { border-bottom: 3px solid $megafon-brand-bg-border; }
+      }
+    }
+  }
+}
