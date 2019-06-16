@@ -1,0 +1,14 @@
+.informer {
+
+  &__content,
+  &__action {
+    display: flex;
+    &_distribute_default { justify-content: inherit; }
+    &_distribute_between { justify-content: space-between; }
+    &_distribute_center { justify-content: center; }
+
+    &_space-a_xl { padding: $default_space_xl; }
+    &_space-a_xxl { padding: $default_space_xxl; }
+  }
+
+}
