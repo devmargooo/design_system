@@ -1,0 +1,63 @@
+.list {
+  &__item {
+    display: flex;
+    &_distribute_between { justify-content: space-between; }
+    &_vertical-align_center { align-items: center; }
+    &_indent-t_m { margin-top: $default_space_m; }
+    &_indent-b_s { margin-top: $default_space_s; }
+    &_indent-b_m { margin-top: $default_space_m; }
+    &_indent-b_l { margin-top: $default_space_l; }
+    &_indent-b_xl { margin-top: $default_space_xl; }
+    &_space-b_s { margin-top: $default_space_s; }
+    &_space-a_l { margin-top: $default_space_l; }
+  }
+  &:last-child&_border_top { border-top: none; }
+  &:last-child&_border_bottom { border-bottom: none; }
+}
+
+.theme {
+  &_color_project-default {
+    .list {
+      &_border_all { border: 3px solid $project-default-bg-border; }
+      &_view_default { background: $project-default-bg-default; }
+
+      &__item {
+        &_border_top { border-top: 3px solid $project-default-bg-border; }
+        &_border_bottom { border-bottom: 3px solid $project-default-bg-border; }
+      }
+    }
+  }
+  &_color_project-inverse {
+    .list {
+      &_border_all { border: 3px solid $project-inverse-bg-border; }
+      &_view_default { background: $project-inverse-bg-default; }
+
+      &__item {
+        &_border_top { border-top: 3px solid $project-inverse-bg-border; }
+        &_border_bottom { border-bottom: 3px solid $project-inverse-bg-border; }
+      }
+    }
+  }
+  &_color_project-warning {
+    .list {
+      &_border_all { border: 3px solid $project-warning-bg-border; }
+      &_view_default { background: $project-warning-bg-default; }
+
+      &__item {
+        &_border_top { border-top: 3px solid $project-warning-bg-border; }
+        &_border_bottom { border-bottom: 3px solid $project-warning-bg-border; }
+      }
+    }
+  }
+  &_color_megafon-brand {
+    .list {
+      &_border_all { border: 3px solid $megafon-brand-bg-border; }
+      &_view_default { background: $megafon-brand-bg-default; }
+
+      &__item {
+        &_border_top { border-top: 3px solid $megafon-brand-bg-border; }
+        &_border_bottom { border-bottom: 3px solid $megafon-brand-bg-border; }
+      }
+    }
+  }
+}
