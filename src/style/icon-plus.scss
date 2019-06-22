@@ -1,0 +1,9 @@
+.icon-plus {
+  display: flex;
+  &_vertical-align_center { align-items: center; }
+  &__icon {
+    &_indent-r_s { margin-right: $default_space_s; }
+    &_indent-r_m { margin-right: $default_space_m; }
+    &_indent-l_l { margin-left: $default_space_l; }
+  }
+}
