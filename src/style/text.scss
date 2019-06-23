@@ -1,0 +1,43 @@
+.text {
+  &_align_center { text-align: center; }
+  &_size_s { font-size: $default_fs_s; }
+  &_size_m { font-size: $default_fs_m; }
+  &_size_l { font-size: $default_fs_l; }
+  &_size_xl { font-size: $default_fs_xl; }
+  &_size_xxl { font-size: $default_fs_xxl; }
+  &_type_h1 { margin: 15px 0 21px; }
+  &_type_h2 { margin: 48px 0 20px; }
+  &_type_h3 { margin: 43px 0 0; }
+  &_type_p { margin: 15px 0 21px; }
+}
+
+.theme {
+  &_color_project-default {
+    .text {
+      &_view_primary { color: $project-default-fc-primary; }
+      &_view_secondary { color: $project-default-fc-secondary; }
+      &_view_ghost { color: $project-default-fc-complementary; }
+      &_view_link { color: $project-default-fc-link; }
+    }
+  }
+  &_color_project-inverse {
+    .text {
+      &_view_primary { color: $project-inverse-fc-primary; }
+      &_view_secondary { color: $project-inverse-fc-secondary; }
+      &_view_ghost { color: $project-inverse-fc-complementary; }
+      &_view_link { color: $project-inverse-fc-link; }
+    }
+  }
+  &_color_project-warning {
+    &_view_primary { color: $project-warning-fc-primary; }
+    &_view_secondary { color: $project-warning-fc-secondary; }
+    &_view_ghost { color: $project-warning-fc-complementary; }
+    &_view_link { color: $project-warning-fc-link; }
+  }
+  &_color_megafon-brand {
+    &_view_primary { color: $megafon-brand-fc-primary; }
+    &_view_secondary { color: $megafon-brand-fc-secondary; }
+    &_view_ghost { color: $megafon-brand-fc-complementary; }
+    &_view_link { color: $megafon-brand-fc-link; }
+  }
+}
