@@ -1,10 +1,50 @@
 .text {
   &_align_center { text-align: center; }
-  &_size_s { font-size: $default_fs_s; }
-  &_size_m { font-size: $default_fs_m; }
-  &_size_l { font-size: $default_fs_l; }
-  &_size_xl { font-size: $default_fs_xl; }
-  &_size_xxl { font-size: $default_fs_xxl; }
+  &_size_s {
+    font-size: $default_fs_s;
+    .text__word {
+      height: 7px;
+      &_s { width: 20px; }
+      &_m { width: 48px; }
+      &_l { width: 100px; }
+    }
+  }
+  &_size_m {
+    font-size: $default_fs_m;
+    .text__word {
+      height: 8px;
+      &_s { width: 24px; }
+      &_m { width: 56px; }
+      &_l { width: 114px; }
+    }
+  }
+  &_size_l {
+    font-size: $default_fs_l;
+    .text__word {
+      height: 10px;
+      &_s { width: 28px; }
+      &_m { width: 68px; }
+      &_l { width: 138px; }
+    }
+  }
+  &_size_xl {
+    font-size: $default_fs_xl;
+    .text__word {
+      height: 11px;
+      &_s { width: 32px; }
+      &_m { width: 74px; }
+      &_l { width: 154px; }
+    }
+  }
+  &_size_xxl {
+    font-size: $default_fs_xxl;
+    .text__word {
+      height: 13px;
+      &_s { width: 36px; }
+      &_m { width: 88px; }
+      &_l { width: 184px; }
+    }
+  }
   &_type_h1 { margin: 15px 0 21px; }
   &_type_h2 { margin: 48px 0 20px; }
   &_type_h3 { margin: 43px 0 0; }
